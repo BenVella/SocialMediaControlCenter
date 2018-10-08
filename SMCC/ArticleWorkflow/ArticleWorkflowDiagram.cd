@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ClassDiagram MajorVersion="1" MinorVersion="1">
+  <Class Name="ArticleWorkflow.ArticleFactory">
+    <Position X="8.75" Y="1.25" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleFactory\ArticleFactory.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="ArticleComponent" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ArticleWorkflow.ArticleComponent">
+    <Position X="3.5" Y="1.25" Width="1.5" />
+    <AssociationLine Name="component" Type="ArticleWorkflow.ArticleComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.938" Y="1.25" />
+        <Point X="3.938" Y="1" />
+        <Point X="4.438" Y="1" />
+        <Point X="4.438" Y="1.25" />
+      </Path>
+      <MemberNameLabel ManuallyPlaced="true">
+        <Position X="-0.015" Y="0.341" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAQAAAAAAAAAAAAAAAIAgAAAAAAAAAAEAAAAAQAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleComponent.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Property Name="component" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ArticleWorkflow.Article">
+    <Position X="5.25" Y="3.75" Width="1.5" />
+    <AssociationLine Name="articleState" Type="ArticleWorkflow.ArticleState">
+      <MemberNameLabel ManuallyPlaced="true" ManuallySized="true">
+        <Position X="-1.619" Y="0.351" Height="0.182" Width="0.972" />
+      </MemberNameLabel>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\Article.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="articleState" />
+    </ShowAsAssociation>
+  </Class>
+  <Class Name="ArticleWorkflow.FBArticleDecorator">
+    <Position X="3.25" Y="5.75" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AQAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleDecorator\FBArticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.TwitterArticleDecorator">
+    <Position X="1" Y="5.75" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAEAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleDecorator\TwitterArticle.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.NewArticleState">
+    <Position X="8.5" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="ArticleWorkflow.ArticleState" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="7.25" Y="7.5" />
+        <Point X="7.625" Y="7.5" />
+        <Point X="7.625" Y="8.819" />
+        <Point X="9.25" Y="8.819" />
+        <Point X="9.25" Y="8.444" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAACAAQAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleStates\NewArticleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.ArticleState">
+    <Position X="5.75" Y="6" Width="1.5" />
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAEAEAAAAAAACAAQAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleStates\ArticleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.SavedArticleState">
+    <Position X="10.25" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="ArticleWorkflow.ArticleState" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="7.5" />
+        <Point X="7.625" Y="7.5" />
+        <Point X="7.625" Y="8.819" />
+        <Point X="11" Y="8.819" />
+        <Point X="11" Y="8.444" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAACAAQAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleStates\SavedArticleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.ReviewedArticleState">
+    <Position X="12" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="ArticleWorkflow.ArticleState" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="7.5" />
+        <Point X="7.625" Y="7.5" />
+        <Point X="7.625" Y="8.819" />
+        <Point X="12.75" Y="8.819" />
+        <Point X="12.75" Y="8.444" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAACAAQAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleStates\ReviewedArticleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.PublishedArticleState">
+    <Position X="13.75" Y="6.25" Width="1.5" />
+    <InheritanceLine Type="ArticleWorkflow.ArticleState" FixedFromPoint="true">
+      <Path>
+        <Point X="7.25" Y="7.5" />
+        <Point X="7.625" Y="7.5" />
+        <Point X="7.625" Y="8.819" />
+        <Point X="14.5" Y="8.819" />
+        <Point X="14.5" Y="8.444" />
+      </Path>
+    </InheritanceLine>
+    <TypeIdentifier>
+      <HashCode>AAQAAAAAAAAAAAAAAEAAAAAAAAEAAAAAAACAAQAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleStates\PublishedArticleState.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.PublishAllArticleFactory">
+    <Position X="7.5" Y="3.25" Width="2" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAACAAAAAAAAAIAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleFactory\PublishAllArticleFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.LoadTwitterArticleFactory">
+    <Position X="9.75" Y="3.25" Width="1.75" />
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAEAAAAAAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleFactory\LoadArticleFactory.cs</FileName>
+    </TypeIdentifier>
+  </Class>
+  <Class Name="ArticleWorkflow.ArticleDecorator">
+    <Position X="2.75" Y="3.75" Width="1.5" />
+    <AssociationLine Name="ArticleComponent" Type="ArticleWorkflow.ArticleComponent" FixedFromPoint="true" FixedToPoint="true">
+      <Path>
+        <Point X="3.188" Y="3.75" />
+        <Point X="3.188" Y="2.228" />
+        <Point X="3.5" Y="2.228" />
+      </Path>
+    </AssociationLine>
+    <TypeIdentifier>
+      <HashCode>AAAAAAAAgAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA=</HashCode>
+      <FileName>ArticleWorkflow\ArticleDecorator\ArticleDecorator.cs</FileName>
+    </TypeIdentifier>
+    <ShowAsAssociation>
+      <Field Name="ArticleComponent" />
+    </ShowAsAssociation>
+  </Class>
+  <Font Name="Segoe UI" Size="9" />
+</ClassDiagram>
